@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2025-07-25 20:18:00">
+<cmdb_ci_service_auto action="INSERT_OR_UPDATE">
+<aliases/>
+<asset display_value=""/>
+<asset_tag/>
+<assigned/>
+<assigned_to display_value=""/>
+<assignment_group display_value="CP_VA_CHG_CAB" name="CP_VA_CHG_CAB">39c8a28547614690ccf221a9e16d43b0</assignment_group>
+<attestation_score/>
+<attestation_status>Not Yet Reviewed</attestation_status>
+<attested>false</attested>
+<attested_by display_value=""/>
+<attested_date/>
+<attributes/>
+<bucket/>
+<busines_criticality>4 - not critical</busines_criticality>
+<business_contact display_value=""/>
+<business_need/>
+<business_relation_manager display_value=""/>
+<business_unit display_value=""/>
+<can_print>false</can_print>
+<category/>
+<change_control display_value="CP_VA_CHG_AO_CLIENTELING" name="CP_VA_CHG_AO_CLIENTELING">30c86e4547614690ccf221a9e16d43d7</change_control>
+<checked_in/>
+<checked_out/>
+<checkout/>
+<cmdb_ot_entity display_value=""/>
+<comments/>
+<company display_value="LOUIS VUITTON">904119541beb29100f188553604bcbad</company>
+<compatibility_dependencies/>
+<consumer_type>internal</consumer_type>
+<correlation_id/>
+<cost/>
+<cost_cc>USD</cost_cc>
+<cost_center display_value=""/>
+<delivery_date/>
+<delivery_manager display_value=""/>
+<department display_value="CORPORATE">70ecaeae1b41795060f85352604bcb58</department>
+<discovery_source/>
+<dns_domain/>
+<due/>
+<due_in/>
+<duplicate_of display_value=""/>
+<end_date/>
+<environment/>
+<fault_count>0</fault_count>
+<first_discovered/>
+<fqdn/>
+<gl_account/>
+<hide_from_dashboard>false</hide_from_dashboard>
+<install_date/>
+<install_status>1</install_status>
+<invoice_number/>
+<ip_address/>
+<justification/>
+<last_discovered/>
+<last_review_date/>
+<layer display_value=""/>
+<lease_id/>
+<life_cycle_stage display_value=""/>
+<life_cycle_stage_status display_value=""/>
+<location display_value=""/>
+<mac_address/>
+<maintenance_schedule display_value=""/>
+<managed_by display_value=""/>
+<managed_by_group display_value=""/>
+<manufacturer display_value=""/>
+<model_id display_value=""/>
+<model_number/>
+<monitor>false</monitor>
+<monitoring_requirements/>
+<name>PRODUCT LIBRARY</name>
+<number>SNSVC0001354</number>
+<operational_status>1</operational_status>
+<order_date/>
+<owned_by display_value="Christophe DESCHAMP">08e8a14a47bb6150f8551702e26d4306</owned_by>
+<parent display_value=""/>
+<po_number/>
+<portfolio_status>pipeline</portfolio_status>
+<prerequisites/>
+<price_model>per_unit</price_model>
+<price_unit/>
+<product_instance_id/>
+<published_ref display_value=""/>
+<purchase_date/>
+<schedule display_value=""/>
+<serial_number/>
+<service_classification>Application Service</service_classification>
+<service_level_requirement/>
+<service_owner_delegate display_value=""/>
+<service_status>requirements</service_status>
+<severity/>
+<short_description>PRODUCT LIBRARY - LV Item Repository</short_description>
+<skip_sync>false</skip_sync>
+<sla display_value=""/>
+<spm_service_portfolio display_value=""/>
+<spm_taxonomy_node display_value=""/>
+<stakeholders/>
+<start_date/>
+<state/>
+<subcategory/>
+<support_group display_value="WW_AM_L2_MOBILE_APPS" name="WW_AM_L2_MOBILE_APPS">29c8228547614690ccf221a9e16d43d1</support_group>
+<supported_by display_value="Cyril WOLFF">e61be5c2473f6150f8551702e26d434a</supported_by>
+<sys_class_name>cmdb_ci_service_auto</sys_class_name>
+<sys_class_path>/!!/!7/!(</sys_class_path>
+<sys_created_by>jonathan.rousseau@accenture.com</sys_created_by>
+<sys_created_on>2024-04-12 09:40:48</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>1fa3be4947a94690ccf221a9e16d43e7</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>maugranjm</sys_updated_by>
+<sys_updated_on>2025-02-13 08:53:05</sys_updated_on>
+<total_vulnerable_items/>
+<u_business_criticality>gold</u_business_criticality>
+<u_business_criticality_new>2</u_business_criticality_new>
+<u_category_in_folder>Retail &amp; Digital &amp; Mobile Applications</u_category_in_folder>
+<u_change_technical_approval display_value="CP_VA_CHG_TL_EVENTS_JOURNEY_RETAIL" name="CP_VA_CHG_TL_EVENTS_JOURNEY_RETAIL">cdc8ae4547614690ccf221a9e16d4381</u_change_technical_approval>
+<u_confidential_data>true</u_confidential_data>
+<u_connection_info/>
+<u_device_ac_line_status/>
+<u_device_antivirus_status/>
+<u_device_auto_update_status/>
+<u_device_available_capacity/>
+<u_device_available_physical_memory/>
+<u_device_battery_percent/>
+<u_device_compliance_status/>
+<u_device_current_carrier/>
+<u_device_dell_battery_health/>
+<u_device_encryption_status>false</u_device_encryption_status>
+<u_device_enrollment_status/>
+<u_device_firewall_global_state_status>false</u_device_firewall_global_state_status>
+<u_device_home_carrier/>
+<u_device_imei/>
+<u_device_is_cloud_backup_enabled>false</u_device_is_cloud_backup_enabled>
+<u_device_is_compromised>false</u_device_is_compromised>
+<u_device_is_lost_mode_enabled>false</u_device_is_lost_mode_enabled>
+<u_device_is_security_patch_update>false</u_device_is_security_patch_update>
+<u_device_is_shared_device>false</u_device_is_shared_device>
+<u_device_is_supervised>false</u_device_is_supervised>
+<u_device_last_cloud_backup_date_utc/>
+<u_device_last_seen/>
+<u_device_unenrollment/>
+<u_go_live_date/>
+<u_monitoring_proxy/>
+<u_owner_ams display_value="ECOCEA">e11cd68d47690690ccf221a9e16d439c</u_owner_ams>
+<u_owner_ims display_value=""/>
+<u_reboot_plan/>
+<u_repository_manager display_value=""/>
+<u_role/>
+<u_root_url/>
+<u_service_classification/>
+<u_sql_functional_approval display_value="WW_VA_SRV_AO_SQL_REQUEST_WEBAPPS" name="WW_VA_SRV_AO_SQL_REQUEST_WEBAPPS">f70e6d47c31a5610461e65beb0013121</u_sql_functional_approval>
+<unit_description/>
+<unverified>false</unverified>
+<used_for>PRD</used_for>
+<user_group display_value=""/>
+<vendor display_value=""/>
+<version/>
+<view_service>61e1cb757f23220002d31ccebefa9120</view_service>
+<vulnerability_risk_score/>
+<warranty_expiration/>
+<x_lvm_lv_role_x_lvm_lv_role/>
+</cmdb_ci_service_auto>
+</unload>

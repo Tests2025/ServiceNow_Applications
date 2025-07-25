@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2025-07-25 20:17:57">
+<cmdb_ci_service_auto action="INSERT_OR_UPDATE">
+<aliases/>
+<asset display_value=""/>
+<asset_tag/>
+<assigned/>
+<assigned_to display_value=""/>
+<assignment_group display_value="AS_VA_CHG_CAB" name="AS_VA_CHG_CAB">02c8a28547614690ccf221a9e16d43b3</assignment_group>
+<attestation_score/>
+<attestation_status>Not Yet Reviewed</attestation_status>
+<attested>false</attested>
+<attested_by display_value=""/>
+<attested_date/>
+<attributes/>
+<bucket/>
+<busines_criticality>4 - not critical</busines_criticality>
+<business_contact display_value=""/>
+<business_need/>
+<business_relation_manager display_value=""/>
+<business_unit display_value=""/>
+<can_print>false</can_print>
+<category/>
+<change_control display_value="CP_VA_CHG_AO_WEB_APPS" name="CP_VA_CHG_AO_WEB_APPS">c9c8ae4547614690ccf221a9e16d435c</change_control>
+<checked_in/>
+<checked_out/>
+<checkout/>
+<cmdb_ot_entity display_value=""/>
+<comments/>
+<company display_value="LOUIS VUITTON">904119541beb29100f188553604bcbad</company>
+<compatibility_dependencies/>
+<consumer_type>internal</consumer_type>
+<correlation_id/>
+<cost/>
+<cost_cc>USD</cost_cc>
+<cost_center display_value=""/>
+<delivery_date/>
+<delivery_manager display_value=""/>
+<department display_value="NORTH ASIA">5917d93d1b3fad50c88aebd4604bcb24</department>
+<discovery_source/>
+<dns_domain/>
+<due/>
+<due_in/>
+<duplicate_of display_value=""/>
+<end_date/>
+<environment>Prd</environment>
+<fault_count>0</fault_count>
+<first_discovered/>
+<fqdn/>
+<gl_account/>
+<hide_from_dashboard>false</hide_from_dashboard>
+<install_date/>
+<install_status>1</install_status>
+<invoice_number/>
+<ip_address/>
+<justification/>
+<last_discovered/>
+<last_review_date/>
+<layer display_value=""/>
+<lease_id/>
+<life_cycle_stage display_value=""/>
+<life_cycle_stage_status display_value=""/>
+<location display_value=""/>
+<mac_address/>
+<maintenance_schedule display_value=""/>
+<managed_by display_value=""/>
+<managed_by_group display_value=""/>
+<manufacturer display_value=""/>
+<model_id display_value=""/>
+<model_number/>
+<monitor>false</monitor>
+<monitoring_requirements/>
+<name>PACKAGING</name>
+<number>SNSVC0001859</number>
+<operational_status>1</operational_status>
+<order_date/>
+<owned_by display_value="Yves DEPIESSE">1d4b2146473f6150f8551702e26d4390</owned_by>
+<parent display_value=""/>
+<po_number/>
+<portfolio_status>pipeline</portfolio_status>
+<prerequisites/>
+<price_model>per_unit</price_model>
+<price_unit/>
+<product_instance_id/>
+<published_ref display_value=""/>
+<purchase_date/>
+<schedule display_value=""/>
+<serial_number/>
+<service_classification>Application Service</service_classification>
+<service_level_requirement/>
+<service_owner_delegate display_value=""/>
+<service_status>requirements</service_status>
+<severity/>
+<short_description>PACKAGING - Management of the stock of materials used for the creation of packaging in the HK warehouse</short_description>
+<skip_sync>false</skip_sync>
+<sla display_value=""/>
+<spm_service_portfolio display_value=""/>
+<spm_taxonomy_node display_value=""/>
+<stakeholders/>
+<start_date/>
+<state/>
+<subcategory/>
+<support_group display_value="WW_AM_L2_RETAIL_WEB_APPLIS" name="WW_AM_L2_RETAIL_WEB_APPLIS">a1c8228547614690ccf221a9e16d43d2</support_group>
+<supported_by display_value="Francois GUILLERAY">be3b2d06473f6150f8551702e26d43ec</supported_by>
+<sys_class_name>cmdb_ci_service_auto</sys_class_name>
+<sys_class_path>/!!/!7/!(</sys_class_path>
+<sys_created_by>NASSC</sys_created_by>
+<sys_created_on>2024-12-12 15:56:13</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>a70de4bb471e1a100707eef2026d4344</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>maugranjm</sys_updated_by>
+<sys_updated_on>2025-02-13 12:06:15</sys_updated_on>
+<total_vulnerable_items/>
+<u_business_criticality>bronze</u_business_criticality>
+<u_business_criticality_new>4</u_business_criticality_new>
+<u_category_in_folder>Logistic &amp; Supply Chain Applications</u_category_in_folder>
+<u_change_technical_approval display_value="CP_VA_CHG_TL_DELIVERY_EXPERIENCE" name="CP_VA_CHG_TL_DELIVERY_EXPERIENCE">4ac8e28547614690ccf221a9e16d4396</u_change_technical_approval>
+<u_confidential_data>false</u_confidential_data>
+<u_connection_info/>
+<u_device_ac_line_status/>
+<u_device_antivirus_status/>
+<u_device_auto_update_status/>
+<u_device_available_capacity/>
+<u_device_available_physical_memory/>
+<u_device_battery_percent/>
+<u_device_compliance_status/>
+<u_device_current_carrier/>
+<u_device_dell_battery_health/>
+<u_device_encryption_status>false</u_device_encryption_status>
+<u_device_enrollment_status/>
+<u_device_firewall_global_state_status>false</u_device_firewall_global_state_status>
+<u_device_home_carrier/>
+<u_device_imei/>
+<u_device_is_cloud_backup_enabled>false</u_device_is_cloud_backup_enabled>
+<u_device_is_compromised>false</u_device_is_compromised>
+<u_device_is_lost_mode_enabled>false</u_device_is_lost_mode_enabled>
+<u_device_is_security_patch_update>false</u_device_is_security_patch_update>
+<u_device_is_shared_device>false</u_device_is_shared_device>
+<u_device_is_supervised>false</u_device_is_supervised>
+<u_device_last_cloud_backup_date_utc/>
+<u_device_last_seen/>
+<u_device_unenrollment/>
+<u_go_live_date/>
+<u_monitoring_proxy/>
+<u_owner_ams display_value="VALTECH">de1c1a8d47690690ccf221a9e16d43ac</u_owner_ams>
+<u_owner_ims display_value=""/>
+<u_reboot_plan/>
+<u_repository_manager display_value="Aicha DURET">ffa9698247fb6150f8551702e26d4344</u_repository_manager>
+<u_role/>
+<u_root_url/>
+<u_service_classification/>
+<u_sql_functional_approval display_value=""/>
+<unit_description/>
+<unverified>false</unverified>
+<used_for>PRD</used_for>
+<user_group display_value=""/>
+<vendor display_value=""/>
+<version/>
+<view_service>61e1cb757f23220002d31ccebefa9120</view_service>
+<vulnerability_risk_score/>
+<warranty_expiration/>
+<x_lvm_lv_role_x_lvm_lv_role/>
+</cmdb_ci_service_auto>
+</unload>
