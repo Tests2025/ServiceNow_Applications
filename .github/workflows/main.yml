@@ -1,0 +1,26 @@
+name: Get ServiceNow Change Request
+
+on:
+  push:
+    branches: [ main ]  # Trigger sur push, ou adapte (ex. workflow_dispatch pour manuel)
+
+jobs:
+  get-change:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Get Change Request
+        uses: ServiceNow/servicenow-devops-get-change@v5.1.0
+        with:
+          devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}  # Username de ton user dédié (ex. github-devops-user)
+          devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}  # Password associé
+          instance-url: ${{ secrets.SN_INSTANCE_URL }}  # URL de ton instance (ex. https://louisvuittondev.service-now.com)
+          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}  # Sys_id de ton intégration DevOps custom (ex. github-actions-custom)
+          context-github: ${{ toJSON(github) }}  # Contexte GitHub auto-généré
+          change-details: '{"build_number":"1","pipeline_name":"ARGOCD_Deployment","stage_name":"Create_Standard_Change","attempt_number":"1"}'  # JSON pour identifier/créer le change ; adapte aux clés comme build_number, pipeline_name (basé sur ton CI/CD)
+
+      # Optionnel : Utilise les outputs pour la suite du workflow
+      - name: Echo Change Number
+        run: echo "Change Request Number:" ${{ steps.get-change.outputs.change-request-number }}
