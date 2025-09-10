@@ -19,7 +19,7 @@ jobs:
           instance-url: ${{ secrets.SN_INSTANCE_URL }}  # URL de ton instance (ex. https://louisvuittondev.service-now.com)
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}  # Sys_id de ton intégration DevOps custom (ex. github-actions-custom)
           context-github: ${{ toJSON(github) }}  # Contexte GitHub auto-généré
-          change-details: '{"build_number":"1","pipeline_name":"ARGOCD_Deployment","stage_name":"Create_Standard_Change","attempt_number":"1"}'  # JSON pour identifier/créer le change ; adapte aux clés comme build_number, pipeline_name (basé sur ton CI/CD)
+          change-details: '{"build_number":"21","pipeline_name":"CI_Pipeline","stage_name":"Create_Change","attempt_number":"1"}'
 
       # Optionnel : Utilise les outputs pour la suite du workflow
       - name: Echo Change Number
