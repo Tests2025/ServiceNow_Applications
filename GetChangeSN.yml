@@ -14,7 +14,7 @@ jobs:
       - name: Get Change Request
         uses: ServiceNow/servicenow-devops-get-change@v5.1.0
         with:
-          devops-integration-user-name: ${{ secrets.SN_DEVOPS_USERNAME }}  # Username de ton user dédié (ex. github-devops-user)
+          devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}  # Username de ton user dédié (ex. github-devops-user)
           devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}  # Password associé
           instance-url: ${{ secrets.SN_INSTANCE_URL }}  # URL de ton instance (ex. https://louisvuittondev.service-now.com)
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}  # Sys_id de ton intégration DevOps custom (ex. github-actions-custom)
@@ -24,3 +24,27 @@ jobs:
       # Optionnel : Utilise les outputs pour la suite du workflow
       - name: Echo Change Number
         run: echo "Change Request Number: ${{ steps.get-change.outputs.change-request-number }} | Status: ${{ steps.get-change.outputs.status }}"
+
+
+
+
+
+        --------
+
+
+
+
+        deploy:
+    name: Deploy
+    needs: <upstream job>
+
+    steps:     
+      - name: ServiceNow Get Change
+        uses: ServiceNow/servicenow-devops-get-change@v3.1.0
+        with:
+          devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
+          devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
+          instance-url: ${{ secrets.SN_INSTANCE_URL }}
+          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+          context-github: ${{ toJSON(github) }}
+          change-details: '{"build_number":"21","pipeline_name":"CI_Pipeline","stage_name":"Create_Change","attempt_number":"1"}'
