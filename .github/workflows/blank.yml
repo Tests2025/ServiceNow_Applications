@@ -1,50 +1,25 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the workflow will run
+name: Get ServiceNow Change Request
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ main ]  # Trigger on push, or adapt (e.g., workflow_dispatch for manual)
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  get-change:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    steps:     
-      - name: ServiceNow Get Change
-        uses: ServiceNow/servicenow-devops-get-change@v3.1.0
+      - name: Get Change Request
+        uses: ServiceNow/servicenow-devops-get-change@v5.1.0
         with:
-          devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}
-          devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}
-          instance-url: ${{ secrets.SN_INSTANCE_URL }}
-          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
-          context-github: ${{ toJSON(github) }}
-          change-details: '{"u_build_number":"21","u_pipeline_name":"CI_Pipeline","u_stage_name":"Create_Change","u_attempt_number":"1"}'
+          devops-integration-user-name: ${{ secrets.SN_DEVOPS_USER }}  # Username of your dedicated user (e.g., github-devops-user)
+          devops-integration-user-password: ${{ secrets.SN_DEVOPS_PASSWORD }}  # Associated password
+          instance-url: ${{ secrets.SN_INSTANCE_URL }}  # URL of your instance (e.g., https://louisvuittondev.service-now.com)
+          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}  # Sys_id of your custom DevOps integration (e.g., github-actions-custom)
+          context-github: ${{ toJSON(github) }}  # Auto-generated GitHub context
+          change-details: '{"build_number":"21","pipeline_name":"ARGOCD_Deployment","stage_name":"Create_Standard_Change","attempt_number":"1"}'  # JSON to identify/create the change; adapt to keys like build_number, pipeline_name (based on your CI/CD)
+
+      # Optional: Use outputs for the rest of the workflow
+      - name: Echo Change Number
+        run: echo "Change Request Number:" ${{ steps.get-change.outputs.change-request-number }}
